@@ -15,8 +15,8 @@ public class Main {
 		
 		ApplicationContext ctx = new FileSystemXmlApplicationContext("src/main/resources/spring-context.xml");
 		Kauppa kauppa = (Kauppa) ctx.getBean(Kauppa.class);
-		Pankki pankki = (Pankki) ctx.getBean("pankki");
 		Kirjanpito kirjanpito = (Kirjanpito) ctx.getBean("kirjanpito");
+
 		
         // kauppa hoitaa yhden asiakkaan kerrallaan seuraavaan tapaan:
         kauppa.aloitaAsiointi();

@@ -2,9 +2,9 @@ package ohtu.verkkokauppa;
 
 public class Pankki implements PankkiInterface {
 
-    private Kirjanpito kirjanpito;
+    private KirjanpitoInterface kirjanpito;
 
-    public Pankki(Kirjanpito k) {
+    public Pankki(KirjanpitoInterface k) {
         kirjanpito = k;
     }
 
